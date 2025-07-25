@@ -58,6 +58,8 @@ public class Task {
 }
 👉 Change "tasks" to whatever collection name you want for your MongoDB data.
 
+Import the dataDump.json into you mongoDb repository for dummy data to test it.
+
 Example:
 
 java
