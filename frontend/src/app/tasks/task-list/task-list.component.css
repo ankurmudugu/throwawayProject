@@ -1,0 +1,31 @@
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.task-desc {
+  font-size: 13px;
+  color: #130202;
+}
+
+mat-list-item {
+  border-bottom: 1px solid #6ca1f1;
+}
+
+mat-list-item:hover {
+  background: linear-gradient(135deg, #94d0ea, #f3f6fb);
+  border-radius: 8px;
+}
+
+.square-card {
+  height: auto;        /* allow it to grow */
+  max-height: none;    /* remove any cap */
+  overflow: visible;   /* let content show */
+}

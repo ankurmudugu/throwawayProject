@@ -1,0 +1,30 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+// 🎨 Define your own palettes
+$my-primary: mat.define-palette(mat.$deep-purple-palette);
+$my-accent: mat.define-palette(mat.$green-palette);
+$my-warn: mat.define-palette(mat.$red-palette);
+
+// 🌞 Create a light theme
+$my-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn,
+  )
+));
+
+/* Apply a nice background to the whole app */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* or your preferred font */
+  background: linear-gradient(135deg, #e3f2fd, #f3f6fb); /* soft blue gradient */
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+// ✅ Apply the theme
+@include mat.all-component-themes($my-theme);

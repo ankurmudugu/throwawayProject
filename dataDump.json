@@ -1,0 +1,72 @@
+[
+  {
+    "_id": { "$oid": "66b9b101b56942dc6f9f5101" },
+    "title": "Prepare project presentation",
+    "description": "Create slides and outline key talking points for the quarterly meeting.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b102b56942dc6f9f5102" },
+    "title": "Draft client follow-up email",
+    "description": "Write a professional email summarizing the meeting and outlining next steps.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b103b56942dc6f9f5103" },
+    "title": "Plan team workshop",
+    "description": "Design an agenda and key discussion topics for the skills development session.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b104b56942dc6f9f5104" },
+    "title": "Review market research report",
+    "description": "Analyze findings from the latest industry trend report and note insights.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b105b56942dc6f9f5105" },
+    "title": "Write performance feedback",
+    "description": "Draft constructive performance feedback for a direct report.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b106b56942dc6f9f5106" },
+    "title": "Outline marketing strategy",
+    "description": "Prepare a high-level plan for the upcoming product launch campaign.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b107b56942dc6f9f5107" },
+    "title": "Schedule stakeholder meeting",
+    "description": "Identify participants, draft agenda, and send calendar invites.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b108b56942dc6f9f5108" },
+    "title": "Prepare budget forecast",
+    "description": "Review current spend and draft next quarter’s budget projection.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b109b56942dc6f9f5109" },
+    "title": "Summarize meeting notes",
+    "description": "Condense raw notes into an actionable summary with clear action items.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  },
+  {
+    "_id": { "$oid": "66b9b10ab56942dc6f9f5110" },
+    "title": "Develop onboarding checklist",
+    "description": "Create a step-by-step onboarding guide for new team members.",
+    "completed": false,
+    "_class": "com.example.demo.model.Task"
+  }
+]

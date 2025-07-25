@@ -1,0 +1,18 @@
+<mat-card class="card square-card">
+  <mat-card-title>Task History</mat-card-title>
+  <mat-card-content>
+    <mat-list *ngIf="tasks.length > 0; else noTasks">
+      <mat-list-item *ngFor="let task of tasks; let i = index">
+        <div matListAvatar class="bullet">{{ i + 1 }}</div>
+        <div matLine>
+          {{ task.title }}
+          <span *ngIf="task.completed" style="color: green;">- completed</span>
+          <span *ngIf="!task.completed" style="color: red;">- open</span>
+        </div>
+      </mat-list-item>
+    </mat-list>
+    <ng-template #noTasks>
+      <p>No tasks found</p>
+    </ng-template>
+  </mat-card-content>
+</mat-card>

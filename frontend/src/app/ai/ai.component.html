@@ -1,0 +1,33 @@
+<div class="ai-container">
+  <mat-card class="ai-card">
+    <mat-card-title>AI Assistance</mat-card-title>
+
+    <mat-card-content>
+      <div class="task-list">
+        <h3>Open Tasks:</h3>
+        <ul>
+          <li *ngFor="let task of tasks">
+            <div class="task-item">
+              <div class="task-info">
+                <strong>{{ task.title }}</strong> – {{ task.description }}
+              </div>
+              <button mat-stroked-button color="primary" (click)="getAiHelp(task)">
+                Get Help
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ai-response" *ngIf="selectedResponse">
+        <h3>AI Response:</h3>
+        <p>{{ selectedResponse }}</p>
+      </div>
+
+      <div class="loading" *ngIf="loading">
+        <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+        <span>Getting AI assistance...</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

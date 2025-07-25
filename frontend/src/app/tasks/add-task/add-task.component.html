@@ -1,0 +1,39 @@
+<div class="add-task-container">
+  <mat-card class="add-task-card">
+    <mat-card-title>Add New Task</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()" #taskForm="ngForm">
+        <!-- Task Name -->
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Task Name</mat-label>
+          <textarea
+            matInput
+            placeholder="Enter task name"
+            name="taskTitle"
+            required
+            [(ngModel)]="taskTitle">
+          </textarea>
+        </mat-form-field>
+
+        <!-- Task Description -->
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Description</mat-label>
+          <textarea
+            matInput
+            rows="3"
+            placeholder="Enter task description"
+            name="taskDescription"
+            [(ngModel)]="taskDescription">
+          </textarea>
+        </mat-form-field>
+
+        <!-- Submit Button -->
+        <div class="actions">
+          <button mat-raised-button color="primary" type="submit">
+            Add Task
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

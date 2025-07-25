@@ -1,0 +1,49 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer mode="side" opened class="sidenav">
+        <!-- your nav buttons -->
+        <div class="sidenav-header">
+            <h2>TaskMan</h2>
+        </div>
+        <nav class="nav-links">
+            <button mat-button class="nav-btn" routerLink="/overview" routerLinkActive="active">
+                <mat-icon>dashboard</mat-icon>
+                Overview
+            </button>
+            <button mat-button class="nav-btn" routerLink="/history" routerLinkActive="active">
+                <mat-icon>bar_chart</mat-icon>
+                Task History
+            </button>
+            <button mat-button class="nav-btn" routerLink="/create" routerLinkActive="active">
+                <mat-icon>add_circle</mat-icon>
+                Create task
+            </button>
+
+            <button mat-button class="nav-btn" routerLink="/ai" routerLinkActive="active">
+                <mat-icon>face</mat-icon>
+                AI Assistance
+            </button>
+
+        </nav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar color="primary" class="top-toolbar">
+            <!-- your toolbar buttons -->
+            <button mat-icon-button (click)="drawer.toggle()" class="menu-button">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span class="toolbar-title">Dashboard</span>
+            <span class="spacer"></span>
+            <button mat-icon-button>
+                <mat-icon>notifications</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon>account_circle</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
